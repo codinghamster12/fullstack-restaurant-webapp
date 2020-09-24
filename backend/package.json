@@ -7,7 +7,7 @@
     "build": "cd frontend && npm run build",
     "install-frontend": "cd frontend && npm install",
     "heroku-postbuild": "npm run install-frontend && npm run build",
-    "start": "nodemon ./src/index.js",
+    "start": "nodemon ./index.js",
     "frontend": "cd frontend && npm start"
   },
   "keywords": [],
