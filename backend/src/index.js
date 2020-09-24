@@ -3,8 +3,8 @@ const app= express();
 const mongoose= require('mongoose');
 const env= require('dotenv').config();
 const PORT= process.env.PORT || 8080;
-const adminRoutes= require('./src/routes/admin/auth');
-const restaurantRoutes= require('./src/routes/restaurant')
+const adminRoutes= require('./routes/admin/auth');
+const restaurantRoutes= require('./routes/restaurant')
 const cors= require('cors');
 const path= require('path');
 
