@@ -1,8 +1,7 @@
 const express= require('express');
-const app= express()
+const app= express();
 const mongoose= require('mongoose');
 const env= require('dotenv').config();
-const bodyParser= require('body-parser');
 const PORT= process.env.PORT || 8080;
 const adminRoutes= require('./routes/admin/auth');
 const restaurantRoutes= require('./routes/restaurant')
@@ -22,7 +21,6 @@ mongoose.connect(process.env.MONGODB_URI || `mongodb+srv://${process.env.MONGO_D
 app.use(cors());
 app.use('/public', express.static(path.join(__dirname,'uploads')));
 app.use(express.json());
-app.use(bodyParser());
 app.use('/api', adminRoutes);
 app.use('/api', restaurantRoutes);
 app.get('/', (req, res) => {
@@ -39,10 +37,8 @@ app.post('/data', (req, res) => {
 })
 
 if(process.env.NODE_ENV=== 'production'){
-    app.use(express.static("frontend/build"))
-    app.get("*", (req, res) => {
-        res.sendFile(path.join(__dirname, 'frontend', 'build', 'index.html'))
-    })
+    app.use(express.static("../../frontend/build"))
+    
 }
 
 
