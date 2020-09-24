@@ -9,7 +9,8 @@ const restaurantRoutes= require('./routes/restaurant')
 const cors= require('cors');
 const path= require('path');
 
-mongoose.connect(process.env.MONGO_DB_URI || `mongodb+srv://${process.env.MONGO_DB_USER}:${process.env.MONGO_DB_PASSWORD}@cluster0.ihx0h.mongodb.net/${process.env.MONGO_DB_DATABASE}?retryWrites=true&w=majority`, 
+
+mongoose.connect(process.env.MONGODB_URI || `mongodb+srv://${process.env.MONGO_DB_USER}:${process.env.MONGO_DB_PASSWORD}@cluster0.e4r3t.mongodb.net/${process.env.MONGO_DB_DATABASE}?retryWrites=true&w=majority`, 
 {
     useNewUrlParser: true, 
     useUnifiedTopology: true,
