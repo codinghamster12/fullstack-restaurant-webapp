@@ -1,5 +1,5 @@
-export const api= 'http://localhost:2000/api'
+export const api= 'https://fullstack-restaurant-app97.herokuapp.com/'
 export const generatePublicURL= (filename) => {
 
-    return `http://localhost:2000/public/${filename}`;
+    return `https://fullstack-restaurant-app97.herokuapp.com/public/${filename}`;
 }
