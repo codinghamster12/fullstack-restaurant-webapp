@@ -2,12 +2,11 @@ const express= require('express');
 const app= express();
 const mongoose= require('mongoose');
 const env= require('dotenv').config();
-const PORT= process.env.PORT || 8080;
+const PORT= process.env.PORT || 2000;
 const adminRoutes= require('./routes/admin/auth');
 const restaurantRoutes= require('./routes/restaurant')
 const cors= require('cors');
 const path= require('path');
-
 
 mongoose.connect(process.env.MONGODB_URI || `mongodb+srv://${process.env.MONGO_DB_USER}:${process.env.MONGO_DB_PASSWORD}@cluster0.e4r3t.mongodb.net/${process.env.MONGO_DB_DATABASE}?retryWrites=true&w=majority`, 
 {
