@@ -6,9 +6,10 @@
   "scripts": {
     "build": "cd frontend && npm run build",
     "install-frontend": "cd frontend && npm install",
-    "heroku-postbuild": "npm run install-frontend && npm run build",
-    "start": "nodemon ./src/index.js",
-    "frontend": "cd frontend && npm start"
+    "start": "node ./src/index.js",
+    "server": "nodemon ./src/index.js",
+    "frontend": "cd frontend && npm start",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm run install-frontend && npm run build"
   },
   "keywords": [],
   "author": "",
