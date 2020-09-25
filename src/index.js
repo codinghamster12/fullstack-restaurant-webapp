@@ -23,18 +23,7 @@ app.use('/public', express.static(path.join(__dirname,'uploads')));
 app.use(express.json());
 app.use('/api', adminRoutes);
 app.use('/api', restaurantRoutes);
-app.get('/', (req, res) => {
-    return res.status(200).json({
-        message: 'hello from the server'
-    })
-    
-});
 
-app.post('/data', (req, res) => {
-    return res.status(200).json({
-        message: req.body
-    })
-})
 
 if(process.env.NODE_ENV=='production'){
     app.use(express.static("frontend/build"))
