@@ -2,12 +2,12 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "build": "cd frontend && npm run build",
     "install-frontend": "cd frontend && npm install",
-    "start": "node ./src/index.js",
-    "server": "nodemon ./src/index.js",
+    "start": "node ./src/server.js",
+    "server": "nodemon ./src/server.js",
     "frontend": "cd frontend && npm start",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm run install-frontend && npm run build"
   },
