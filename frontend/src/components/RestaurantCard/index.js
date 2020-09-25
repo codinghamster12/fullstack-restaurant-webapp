@@ -41,7 +41,7 @@ const RestaurantCard = (props) => {
             <Grid item>
             <Box component="div" className="imageContainer">
                 <img
-                  src={`http://localhost:2000/public/${props.rest.restaurantPictures[0].img}`}
+                  src={`https://fullstack-restaurant-app97.herokuapp.com/public/${props.rest.restaurantPictures[0].img}`}
 
                 ></img>
               </Box>
