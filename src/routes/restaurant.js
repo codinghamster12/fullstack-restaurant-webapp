@@ -8,7 +8,6 @@ const path= require('path');
 const shortid= require('shortid');
 
 const storage = multer.diskStorage(
-  console.log(path.dirname(__dirname)),
  
   {
   
