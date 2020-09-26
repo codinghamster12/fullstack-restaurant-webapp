@@ -155,7 +155,7 @@ const Signin = () => {
           <Avatar src={avatar} variant="square" className={classes.avatar} alt="pizza"></Avatar>
             <Typography variant="h5" style={{textAlign: 'center', fontWeight: 700,color:'#fff'}}>Login</Typography>
             <Typography variant="subtitle1" style={{textAlign: 'center',  color: '#fff'}} className={classes.subtitle}>
-              Please <span style={{fontWeight: 700}}><a href={'/signup'}>register</a></span> if you haven't registered yet.
+              Please <span style={{fontWeight: 700}}><a href={'/#/signup'}>register</a></span> if you haven't registered yet.
             </Typography>
             <InputField
               fullWidth={true}
