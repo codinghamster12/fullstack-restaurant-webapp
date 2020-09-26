@@ -8,6 +8,7 @@ import { signup } from '../../actions/'
 import './style.css'
 
 
+
 const useStyles = makeStyles((theme) => ({
 
   mainContainer:{
@@ -190,7 +191,7 @@ const Signup = () => {
             <Button variant="outlined" onClick={registerUser} className={classes.button} fullWidth={true}>
               Submit
             </Button>
-            <Typography className={classes.subtitle} style={{textAlign:'center', color:'#fff'}} variant="subtitle1">Already registered, <span style={{fontWeight: 700}}><a href="/signin">login</a></span> here.</Typography>
+            <Typography className={classes.subtitle} style={{textAlign:'center', color:'#fff'}} variant="subtitle1">Already registered, <span style={{fontWeight: 700}}><a href={"/signin"}>login</a></span> here.</Typography>
           </Box>
         </Grid>
         </Box>

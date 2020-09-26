@@ -7,9 +7,13 @@ const multer= require('multer');
 const path= require('path');
 const shortid= require('shortid');
 
-const storage = multer.diskStorage({
+const storage = multer.diskStorage(
+  console.log(path.dirname(__dirname)),
+ 
+  {
+  
     destination: function (req, file, cb) {
-      cb(null, path.join(path.dirname(__dirname), 'uploads'))
+      cb(null, path.join('https://fullstack-restaurant-app97.herokuapp.com/', 'uploads'))
     },
     filename: function (req, file, cb) {
       cb(null, shortid.generate() + '-' + file.originalname)
