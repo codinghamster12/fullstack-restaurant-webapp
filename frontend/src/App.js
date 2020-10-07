@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import {HashRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Signin from './containers/Signin';
 import Signup from './containers/Signup';
 import Home from './containers/Home';
